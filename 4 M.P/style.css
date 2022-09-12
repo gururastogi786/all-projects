@@ -1,0 +1,28 @@
+
+h1 {
+     color: blue;
+     text-align: center;               
+     /* border: 2px solid white; */
+     margin-left: 20%;
+     margin-right: 20%;
+     padding-left: 5%;
+}
+
+h2 {
+     color: green;
+     margin: 10px;
+}
+
+body {
+     background-color: black;
+}
+.container{
+     /* border: 2px solid white; */
+     margin-left: 20%;
+     margin-right: 20%;
+     padding-left: 5%;
+     display: flex;
+}
+.container,h1{
+     border: 2px solid yellow;
+}

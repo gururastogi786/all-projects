@@ -1,0 +1,312 @@
+<html>
+    <head>
+        <!-- <link rel="stylesheet"href="sign.css"> -->
+        <title> Signup</title>
+        <style>
+    body{
+    background-image: url("https://expertphotography.b-cdn.net/wp-content/uploads/2018/07/nature-photography-green-tree-plant-leaves.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 100%;
+    border: 2px;
+}
+
+#sign{
+    font-size: xxx-large;
+    color: blueviolet;
+
+
+
+}
+        </style>
+
+    </head>
+    <body>
+        
+        <center>
+        <form action="/#" method="POST">
+            {% csrf_token %}
+        <div class="container">
+        <h1 id="sign"><center>Ragistration Form</center></h1>
+            <label id="user">Name</label>
+            <input type="text"Placeholder="Plz enter Name"id="name" name="name"><br><br>
+            <label id="user">Mob Number</label> 
+            <input type="number"Placeholder="Enter Mobile Number"id="number" name="number" max length="10"> <br><br>
+            <label id="user">Address</label> 
+            <input type="text"Placeholder="Enter Address"id="address" name="address"><br><br>
+            <label id="user">State</label> 
+            <input type="text"Placeholder="Enter State"id="state" name="state"><br><br>
+            <label id="user">District</label> 
+            <input type="text"Placeholder="Enter District"id="district" name="district"><br><br>
+            <label id="user">Village</label> 
+            <input type="text"Placeholder="Enter Village"id="village" name="village"><br><br>
+            <label id="user">Password</label>
+            <input type="text"Placeholder="Plz Enter Password"id="Password" name="Password">  <br><br>
+            <label id="user">Conform Password</label>
+            <input type="text"Placeholder="Plz Enter Conform Password"id="c_pass" name="c_pass">
+            <button type="submit">SUBMIT</button>
+        </div>
+        </center>
+        </form>
+    </body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <head>
+
+    <link rel="stylesheet" href="anmol.css">
+    <title> login</title>
+
+    <style>
+        body {
+            background-image: url("https://i.pinimg.com/originals/79/fd/d1/79fdd17253b569a417e980a99aecd978.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            opacity: 100%;
+            border: 2px;
+        }
+
+        .container {
+            padding-bottom: 20px;
+            margin-top: 13%;
+
+        }
+
+        #login {
+            font-size: xxx-large;
+            color: yellow;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+            font-weight: bold;
+
+
+
+        }
+
+        #user {
+            font-size: xx-large;
+            color: rgb(240, 190, 12);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+
+        }
+
+        #username {
+            font-size: larger;
+            border: 5px solid teal;
+            border-radius: 8px;
+            padding: 5;
+        }
+
+        #password {
+            font-size: larger;
+            border: 5px solid teal;
+            border-radius: 8px;
+            padding: 5;
+
+        }
+
+        #btn {
+            font-size: large;
+            background-color: darkblue;
+            color: white;
+            border-radius: 10px;
+
+        }
+
+        #forget {
+            padding-right: 10%;
+        }
+
+        #create {
+            padding-left: 15%;
+            font-size: medium;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <center>
+            <div class="container">
+                <h1 id="login">
+                    <center>Login Page</center>
+                </h1>
+                <label id="user">Username</label><br><br>
+                <input type="text" placeholder="Enter your username" id="username" name="username"><br><br>
+                <label id="user">Password</label><br><br>
+                <input type="password" placeholder="Enter your password" id="password" name="password"><br>
+                <a href="" id="forget" button="onclick">Forget Password</a><br><br>
+                <button type="submit" id="btn">Login</button><br>
+                <a href="http://127.0.0.1:5500/signup.html" id="create" button="onclick">Create new account</a>
+            </div>
+        </center>
+    </form>
+</body>
+
+</html>  -->
+
+
+
+
+
+
+
+{% comment %} 
+<!DOCTYPE>
+<html>
+    
+<head>
+    <title>ContactUs</title>
+</head>
+<body>
+
+    <h1>user form</h1>
+    <form method='POST'>
+        {% csrf_token %}
+        <h1>Your name:<input type="text" placeholder="Enter Your Name" name="name"></h1>
+        <h1>Phone No:<input type="text" placeholder="Enter your Number" name="number"></h1>
+        <h1>Email:<input type="text" placeholder="Enter your Email" name="email"></h1>
+        <h1>Age:<input type="text" placeholder="Enter your age" name="age"></h1>
+        <button type="submit">SUBMIT</button>
+
+    </form>
+</body>  {% endcomment %}
+
+
+{% comment %} 
+<!DOCTYPE>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/static/sign.css">
+    <title> Signup</title>
+</head>
+
+<body>
+    <center>
+        <h1 id="sign"><center>Ragistration Form</center></h1>
+            <form method='POST'>
+                <div class="container">
+                {% csrf_token %}
+                <label id="user">UserName</label> <label id="user">FullName</label><br>
+                <input type="text" Placeholder="Plz Enter UserName" id="username" name="username"> <input type="text"
+                    Placeholder="Plz enter FullName" id="fullname" name="fullname"><br><br>
+                <label id="user">Mob Number</label> <label id="user">OTP</label><br>
+                <input type="number" Placeholder="Enter Mobile Number" id="number" name="number" max length="10"> <input type="number"
+                    Placeholder="Enter OTP" id="N_otp" name="N_otp" max length="4"><br><br>
+                <label id="user">Email</label> <label id="user">OTP</label><br>
+                <input type="email" Placeholder="Enter Email id" id="email" name="email"> <input type="number"
+                    Placeholder="Enter OTP" id="E_otp" name="E_otp"><br><br>
+                <label id="user">State</label> <label id="user">City</label> <label id="user">PIN</label><br>
+                <input type="text" Placeholder="Enter State" id="State" name="State"> <input type="text" Placeholder="Enter City"
+                    id="city" name="city"> <input type="number" Placeholder="Enter PIN Code" id="pin" name="pin"><br><br>
+                <label id="user">Password</label>
+                <input type="text" Placeholder="Enter Password " id="Password" name="Password">
+                <label id="user">Conform Password</label> <label id="user">Uplod Image</label><br>
+                <input type="text" Placeholder="Enter Conform Password " id="con_pass" name="con_pass"> <input type="file"
+                    Placeholder="Plz Uplode Image" id="img" name="img"><br><br>
+                </div>
+            </form>
+    </center>
+</body>
+
+</html>   {% endcomment %}
+
+
+
+
+
+<!-- <!DOCTYPE>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/static/sign.css">
+    <title> Signup</title>
+
+
+</head>
+
+<body>
+    <center>
+        
+
+            <form method='POST'>
+                <div class="container">
+                {% csrf_token %}
+                <h1 id="sign">
+                    <center>Ragistration Form</center>
+                </h1>
+                <label id="user">UserName</label> <label id="user">FullName</label><br>
+                <input type="text" Placeholder="Plz Enter UserName" id="username" name="username"> <input type="text"
+                    Placeholder="Plz enter FullName" id="fullname" name="fullname"><br><br>
+                <label id="user">Mob Number</label> <label id="user">OTP</label><br>
+                <input type="number" Placeholder="Enter Mobile Number" id="number" name="number" max length="10"> <input type="number"
+                    Placeholder="Enter OTP" id="N_otp" name="N_otp" max length="4"><br><br>
+                <label id="user">Email</label> <label id="user">OTP</label><br>
+                <input type="email" Placeholder="Enter Email id" id="email" name="email"> <input type="number"
+                    Placeholder="Enter OTP" id="E_otp" name="E_otp"><br><br>
+                <label id="user">State</label> <label id="user">City</label> <label id="user">PIN</label><br>
+                <input type="text" Placeholder="Enter State" id="State" name="State"> <input type="text" Placeholder="Enter City"
+                    id="city" name="city"> <input type="number" Placeholder="Enter PIN Code" id="pin" name="pin"><br><br>
+                <label id="user">Password</label>
+                <input type="text" Placeholder="Enter Password " id="Password" name="Password">
+                <label id="user">Conform Password</label> <label id="user">Uplod Image</label><br>
+                <input type="text" Placeholder="Enter Conform Password " id="con_pass" name="con_pass"> <input type="file"
+                    Placeholder="Plz Uplode Image" id="img" name="img"><br><br>
+                </div>
+    </center>
+
+            </form>
+</body>
+
+</html>  -->
+
+
+<!-- 
+<!DOCTYPE>
+<html>
+
+<body>
+
+    <head>
+        <title>ContactUs</title>
+    </head>
+    <h1>user form</h1>
+    <form method='POST'>
+        {% csrf_token %}
+        <h1>Your name:<input type="text" placeholder="Enter Your Name" name="name"></h1>
+        <h1>Phone No:<input type="text" placeholder="Enter your Number" name="number"></h1>
+        <button type="submit">SUBMIT</button
+    </form>
+</body>  -->
+
